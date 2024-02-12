@@ -155,25 +155,6 @@ section .header{
     font-weight: 600;
 }
 
-.habilidades{
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-}
-
-.habilidades .card{
-    background-color: #27272a;
-    padding: 1rem;
-    border: 2px solid transparent;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-}
-
-.habilidades .card:hover{
-    background-color: #323232;
-    border-color: #fff;
-}
 .img-hab{
     width: 45px;
 }
