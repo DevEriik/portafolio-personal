@@ -164,3 +164,111 @@ section .header{
     gap: 0.5rem;
     margin-top: 20px;
 }
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.title-proy{
+    color: #fff;
+    text-align: center;
+}
+
+.proyectos{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+}
+
+.proyectos .card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.proyectos .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.card{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /**background-image: url(/imgCard/To\ do\ list.PNG);
+    background-size: cover;*/
+}
+
+.descr{
+    color: #c5c0c0;
+}
+
+.proycard{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-card{
+    width: 30px;
+}
+
+/**Estilos para formulario*/
+
+.form{
+    background-color: #27272a;
+    display: grid;
+    grid-template-columns: auto;
+    height: 240px;
+    gap: 15px;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+#nombre{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    width: 400px;
+    
+}
+
+#email{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    width: 400px;
+}
+
+#mensaje{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    width: 400px;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    height: 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
