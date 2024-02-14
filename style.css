@@ -222,53 +222,78 @@ section .header{
 
 /**Estilos para formulario*/
 
-.form{
-    background-color: #27272a;
-    display: grid;
-    grid-template-columns: auto;
-    height: 240px;
-    gap: 15px;
-    padding: 1rem;
-    border: 2px solid transparent;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-}
+form{
+    width:500px;
+    margin:auto;
+    background:rgba(0,0,0,0.3);
+    padding:10px 20px;
+    box-sizing:border-box;
+    margin-top:20px;
+    border-radius:10px;
+  }
 
-#nombre{
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 6px;
-    text-align: center;
-    width: 400px;
-    
-}
-
-#email{
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 6px;
-    text-align: center;
-    width: 400px;
-}
-
-#mensaje{
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 6px;
-    text-align: center;
-    width: 400px;
-}
-
-.btn{
-    padding: 1rem 2rem;
-    height: 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #1d4ed8;
+  input{
     border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+  }
+
+  h2{
+    color:#fff;
+    text-align:center;
+    margin:0;
+    font-size:30px;
+    margin-bottom:30px;
+    
+  }
+  input , textarea{
+    width:100%;
+    margin-bottom:30px;
+    padding:7px;
+    box-sizing:border-box;
+    font-size:17px;
+    border:none;
+    border-radius: 5px;
+  }
+  textarea{
+    min-heigth:100px;
+    max-height:200px;
+    max-width:100%;
+  }
+  #boton{
+    background:rgba(0,0,0,0.3);
+    color:#fff;
+    padding:20px;
+  }
+  #boton:hover{
+    background: #1e40af;
+    color:#fff;
+    cursor:pointer;
+  }
+
+  .contac{
+    padding: 150px;
+  }
+  /* Esto es lo mas importante para hacer que este formulario sea responsive por que : con estos se dan parametros para que si la condicion se cumple se realicen los cambios presentados en el parentesis es como en javascrip if(condiciones que estan aqui se ejecute el codigo que esta adentro){codigo};*/
+  @media (max-width:480px){
+    form{
+      width:100%;
+    }
+  }
+
+  /*Footer*/ 
+
+  .footer{
+    background-color: #323232;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  .footer span{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer i{
+    padding-top: 15px;
+  }
