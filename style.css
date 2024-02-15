@@ -82,7 +82,9 @@ nav{
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
+
 }
+
 
 .blur{
     position: relative;
@@ -206,7 +208,6 @@ section .header{
     /**background-image: url(/imgCard/To\ do\ list.PNG);
     background-size: cover;*/
 }
-
 .descr{
     color: #c5c0c0;
 }
@@ -219,6 +220,7 @@ section .header{
 .img-card{
     width: 30px;
 }
+
 
 /**Estilos para formulario*/
 
@@ -254,7 +256,7 @@ form{
     border-radius: 5px;
   }
   textarea{
-    min-heigth:100px;
+    min-height:100px;
     max-height:200px;
     max-width:100%;
   }
@@ -278,6 +280,7 @@ form{
       width:100%;
     }
   }
+  
 
   /*Footer*/ 
 
@@ -289,11 +292,12 @@ form{
     border-radius: 15px;
   }
 
-  .footer span{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-  }
+  /**Logos footer*/
 
-  .footer i{
-    padding-top: 15px;
-  }
+  .conten-logos{
+    background-color: #ccc;
+    display: flex;
+    gap: 25px;
+}
+
+
