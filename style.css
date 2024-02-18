@@ -288,6 +288,7 @@ form{
     background-color: #323232;
     color: #ccc;
     padding: 20px 0;
+    margin: -110px;
     text-align: center;
     border-radius: 15px;
   }
@@ -295,9 +296,16 @@ form{
   /**Logos footer*/
 
   .conten-logos{
-    background-color: #ccc;
     display: flex;
     gap: 25px;
+    justify-content: center;
 }
 
+.contac-logo a{
+    color: rgb(96, 95, 95);
+    text-decoration: none;
+}
 
+.copy{
+    padding-top: 50px;
+}
