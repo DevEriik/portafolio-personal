@@ -6,6 +6,7 @@
     outline: none;
     border: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 img{
@@ -167,7 +168,14 @@ section .header{
     margin-top: 20px;
 }
 
-section .header{
+/** Section Card*/
+
+.container {
+    padding: 0 20px;
+    padding-top: 30vh;
+}
+
+.header {
     margin-bottom: 1rem;
     color: #fff;
     text-align: center;
@@ -175,123 +183,114 @@ section .header{
     font-weight: 600;
 }
 
-.title-proy{
-    color: #fff;
-    text-align: center;
-}
-
-.proyectos{
-    margin-top: 4rem;
+.proyectos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.proyectos .card{
+.card {
     background-color: #27272a;
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
+    height: 200px;
+    flex-direction: column;
+    position: relative;
 }
 
-.proyectos .card:hover{
+.card:hover {
     background-color: #323232;
     border-color: #fff;
 }
 
-.card{
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /**background-image: url(/imgCard/To\ do\ list.PNG);
-    background-size: cover;*/
-}
-.descr{
-    color: #c5c0c0;
+.title-proy {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.proycard{
+.proycard {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .img-card{
     width: 30px;
 }
 
-
 /**Estilos para formulario*/
+.contac{
+    padding-top: 30vh;
+}
 
-form{
-    width:500px;
-    margin:auto;
-    background:rgba(0,0,0,0.3);
-    padding:10px 20px;
-    box-sizing:border-box;
-    margin-top:20px;
-    border-radius:10px;
-  }
+form {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+}
 
-  input{
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
     border-radius: 5px;
-  }
+}
 
-  h2{
-    color:#fff;
-    text-align:center;
-    margin:0;
-    font-size:30px;
-    margin-bottom:30px;
-    
-  }
-  input , textarea{
-    width:100%;
-    margin-bottom:30px;
-    padding:7px;
-    box-sizing:border-box;
-    font-size:17px;
-    border:none;
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#boton {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 15px;
+    border: none;
     border-radius: 5px;
-  }
-  textarea{
-    min-height:100px;
-    max-height:200px;
-    max-width:100%;
-  }
-  #boton{
-    background:rgba(0,0,0,0.3);
-    color:#fff;
-    padding:20px;
-  }
-  #boton:hover{
+    cursor: pointer;
+}
+
+#boton:hover {
     background: #1e40af;
-    color:#fff;
-    cursor:pointer;
-  }
+}
 
-  .contac{
-    padding: 150px;
-  }
-  /* Esto es lo mas importante para hacer que este formulario sea responsive por que : con estos se dan parametros para que si la condicion se cumple se realicen los cambios presentados en el parentesis es como en javascrip if(condiciones que estan aqui se ejecute el codigo que esta adentro){codigo};*/
-  @media (max-width:480px){
-    form{
-      width:100%;
-    }
-  }
+  
   
 
   /*Footer*/ 
 
   .footer{
-    background-color: #323232;
     color: #ccc;
-    padding: 20px 0;
-    margin: -110px;
+    padding: 20px;
+    margin: 50px;
     text-align: center;
     border-radius: 15px;
+    padding-top: 100px;
   }
+
 
   /**Logos footer*/
 

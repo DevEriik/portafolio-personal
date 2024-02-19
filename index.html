@@ -9,21 +9,21 @@
 </head>
 <body>
     <nav>
-        <div class="nav-logo">
-            <a href="#">
+        <div class="nav-logo" id="inicio-nav">
+            <a href="#inicio-nav">
                 <img src="logo.png" alt="">
             </a>
         </div>
         <ul class="nav-links">
-            <li class="link"><a href="#">Inicio</a></li>
-            <li class="link"><a href="#">Acerca de mí</a></li>
-            <li class="link"><a href="#">Proyectos</a></li>
+            <li class="link"><a href="#inicio-nav">Inicio</a></li>
+            <li class="link"><a href="#acerca-de-mi">Acerca de mí</a></li>
+            <li class="link"><a href="#proyect">Proyectos</a></li>
         </ul>
-        <button class="btn-contacto">Contáctame</button>    
+        <a href="#contacme"><button class="btn-contacto">Contáctame</button></a>    
     </nav>
 
     <header class="container">
-        <div class="content">
+        <div class="content" id="acerca-de-mi">
             <span class="blur"></span>
             <span class="blur"></span>
             <!--<h4>Crea tu página web responsive</h4>-->
@@ -44,7 +44,7 @@
         </div>
     </header>
 
-    <section class="container">
+    <section class="container" id="proyect">
         <h2 class="header">Proyectos</h2>
         <div class="proyectos">
             <div class="card">
@@ -96,7 +96,7 @@
         </div>
 
         <div class="contac">
-        <form >
+        <form id="contacme">
             <h2>Contáctame</h2>
             <span class="blur"></span>
             <span class="blur"></span>
